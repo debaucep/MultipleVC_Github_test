@@ -37,6 +37,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MoB-bg-yig">
+                                <rect key="frame" x="28" y="86" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xd1-4o-wUm"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -52,6 +56,8 @@
                     <navigationItem key="navigationItem" title="Home" id="spe-l0-zwc"/>
                     <connections>
                         <outlet property="label" destination="LOh-z6-ISG" id="TCC-5T-uo3"/>
+                        <outlet property="topLabel" destination="Fb0-SF-rPQ" id="eee-yn-yYL"/>
+                        <outlet property="topSlider" destination="MoB-bg-yig" id="G1w-kb-qvE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CX-Vf-lyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

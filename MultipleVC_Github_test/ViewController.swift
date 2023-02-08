@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     var count = 0
     
     
+    @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var topSlider: UISlider!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
