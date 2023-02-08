@@ -31,8 +31,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqB-it-wGO">
-                                <rect key="frame" x="163" y="483" width="67.333333333333314" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqB-it-wGO">
+                                <rect key="frame" x="163" y="483" width="72" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="stk-zw-N1c"/>
                                 </constraints>
@@ -42,14 +42,26 @@
                                     <action selector="resetPressed:" destination="gr5-xz-1Lp" eventType="touchUpInside" id="fVy-KF-T5f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2b-TV-5vj">
+                                <rect key="frame" x="163" y="537" width="72" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetPressed:" destination="gr5-xz-1Lp" eventType="touchUpInside" id="kne-q2-kg9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xd1-4o-wUm"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="y2b-TV-5vj" firstAttribute="leading" secondItem="zqB-it-wGO" secondAttribute="leading" id="95H-sp-nja"/>
                             <constraint firstItem="R2h-VI-iuZ" firstAttribute="centerX" secondItem="8Uw-R8-6nK" secondAttribute="centerX" id="FmO-W5-BbK"/>
+                            <constraint firstItem="y2b-TV-5vj" firstAttribute="centerX" secondItem="zqB-it-wGO" secondAttribute="centerX" id="GeE-sp-zcf"/>
                             <constraint firstItem="zqB-it-wGO" firstAttribute="centerX" secondItem="R2h-VI-iuZ" secondAttribute="centerX" id="P3X-td-T2w"/>
                             <constraint firstItem="zqB-it-wGO" firstAttribute="top" secondItem="R2h-VI-iuZ" secondAttribute="bottom" constant="39.333333333333314" id="UHW-Ae-oMU"/>
+                            <constraint firstItem="y2b-TV-5vj" firstAttribute="top" secondItem="zqB-it-wGO" secondAttribute="bottom" constant="19" id="bdD-s3-VV0"/>
                             <constraint firstItem="R2h-VI-iuZ" firstAttribute="centerY" secondItem="8Uw-R8-6nK" secondAttribute="centerY" id="fMl-HA-vHm"/>
+                            <constraint firstItem="y2b-TV-5vj" firstAttribute="leading" secondItem="Xd1-4o-wUm" secondAttribute="leading" constant="163" id="kNr-Qd-51M"/>
                             <constraint firstItem="Xd1-4o-wUm" firstAttribute="bottom" secondItem="zqB-it-wGO" secondAttribute="bottom" constant="300" id="lKU-Hv-AIV"/>
                         </constraints>
                     </view>
