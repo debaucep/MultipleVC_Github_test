@@ -50,6 +50,15 @@
                                     <action selector="resetPressed:" destination="gr5-xz-1Lp" eventType="touchUpInside" id="kne-q2-kg9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe2-m9-bp4">
+                                <rect key="frame" x="163" y="590" width="72" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetPressed:" destination="gr5-xz-1Lp" eventType="touchUpInside" id="oO4-1B-pFj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xd1-4o-wUm"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
