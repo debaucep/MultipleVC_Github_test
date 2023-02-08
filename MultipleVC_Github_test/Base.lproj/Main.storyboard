@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2h-VI-iuZ">
-                                <rect key="frame" x="158.66666666666666" y="408.66666666666669" width="76" height="35"/>
+                                <rect key="frame" x="158.66666666666666" y="408.33333333333331" width="76" height="35.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="to VC2"/>
                                 <connections>
@@ -31,17 +31,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqB-it-wGO">
+                                <rect key="frame" x="163" y="483" width="67.333333333333314" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="stk-zw-N1c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetPressed:" destination="gr5-xz-1Lp" eventType="touchUpInside" id="fVy-KF-T5f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xd1-4o-wUm"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="R2h-VI-iuZ" firstAttribute="centerX" secondItem="8Uw-R8-6nK" secondAttribute="centerX" id="FmO-W5-BbK"/>
+                            <constraint firstItem="zqB-it-wGO" firstAttribute="centerX" secondItem="R2h-VI-iuZ" secondAttribute="centerX" id="P3X-td-T2w"/>
+                            <constraint firstItem="zqB-it-wGO" firstAttribute="top" secondItem="R2h-VI-iuZ" secondAttribute="bottom" constant="39.333333333333314" id="UHW-Ae-oMU"/>
                             <constraint firstItem="R2h-VI-iuZ" firstAttribute="centerY" secondItem="8Uw-R8-6nK" secondAttribute="centerY" id="fMl-HA-vHm"/>
+                            <constraint firstItem="Xd1-4o-wUm" firstAttribute="bottom" secondItem="zqB-it-wGO" secondAttribute="bottom" constant="300" id="lKU-Hv-AIV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="spe-l0-zwc"/>
                     <connections>
                         <outlet property="label" destination="LOh-z6-ISG" id="TCC-5T-uo3"/>
+                        <outlet property="startButton" destination="R2h-VI-iuZ" id="KFg-cM-fdw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CX-Vf-lyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
